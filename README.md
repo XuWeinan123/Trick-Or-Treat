@@ -1,43 +1,18 @@
 > [!NOTE]
 > 本 README 是由 AI 自动生成的。
 
-Below are the steps to get your plugin running. You can also find instructions at:
+# 🎃 Trick or Treat
 
-  https://www.figma.com/plugin-docs/plugin-quickstart-guide/
+这是一个充满趣味性的 Figma 恶作剧（Prank）插件！它会在你不注意的时候，给你（或你的同事）送上一份万圣节“惊喜”。
 
-This plugin template uses Typescript and NPM, two standard tools in creating JavaScript applications.
+## 功能特点
 
-First, download Node.js which comes with NPM. This will allow you to install TypeScript and other
-libraries. You can find the download link here:
+- **设计转图**：自动将选中的 Frame 或 Component 转换为 PNG 图片。
+- **保留容器**：保留原始的容器结构，但里面的内容已经变成了静态图片。
+- **位置打乱**：随机调换这些被转成图片的节点位置，完成一次完美的“恶作剧”。
 
-  https://nodejs.org/en/download/
+## 快速上手
 
-Next, install TypeScript using the command:
-
-  npm install -g typescript
-
-Finally, in the directory of your plugin, get the latest type definitions for the plugin API by running:
-
-  npm install --save-dev @figma/plugin-typings
-
-If you are familiar with JavaScript, TypeScript will look very familiar. In fact, valid JavaScript code
-is already valid Typescript code.
-
-TypeScript adds type annotations to variables. This allows code editors such as Visual Studio Code
-to provide information about the Figma API while you are writing code, as well as help catch bugs
-you previously didn't notice.
-
-For more information, visit https://www.typescriptlang.org/
-
-Using TypeScript requires a compiler to convert TypeScript (code.ts) into JavaScript (code.js)
-for the browser to run.
-
-We recommend writing TypeScript code using Visual Studio code:
-
-1. Download Visual Studio Code if you haven't already: https://code.visualstudio.com/.
-2. Open this directory in Visual Studio Code.
-3. Compile TypeScript to JavaScript: Run the "Terminal > Run Build Task..." menu item,
-    then select "npm: watch". You will have to do this again every time
-    you reopen Visual Studio Code.
-
-That's it! Visual Studio Code will regenerate the JavaScript file every time you save.
+1. 克隆本仓库到本地。
+2. 在 Figma 中选择 `Plugins` -> `Development` -> `Import plugin from manifest...` 并选中 `manifest.json`。
+3. 选中您要作弄的画布节点，运行插件，见证“奇迹”发生！
